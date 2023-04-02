@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>362</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Cascadia Code</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MeMusic</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(39, 121, 255, 255), stop:1 rgba(248, 181, 44, 255))</string>
+  </property>
+  <widget class="QPushButton" name="Home">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>15</y>
+     <width>16</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: black;
+border-radius:5px
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Settings">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>51</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Images/setting.png</normaloff>../Images/setting.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="listtomus">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+   </property>
+   <property name="text">
+    <string>Listen to music</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cascadia Code</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;
+color: black;</string>
+   </property>
+   <property name="text">
+    <string>Home &gt; Song Distributers</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>481</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-529</y>
+         <width>455</width>
+         <height>824</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>800</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(109, 109, 109);
+border: none;
+border-radius: 20px</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>CD Baby</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>61</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;
+border-radius:10px</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CD Baby&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="cdbaby">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>100</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+           </property>
+           <property name="text">
+            <string>Go to CD Baby</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>110</y>
+             <width>511</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CD Baby is a service for independent musicians to &lt;/p&gt;&lt;p&gt;distribute their music to the most popular&lt;/p&gt;&lt;p&gt;streaming and download services. &lt;/p&gt;&lt;p&gt;it doesn't just cover digital sharing,&lt;/p&gt;&lt;p&gt;it also makes it easy for&lt;/p&gt;&lt;p&gt;artists to release physical CDs and recordes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>270</y>
+             <width>71</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.255227, stop:0 rgba(128, 228, 162, 255), stop:1 rgba(100, 208, 203, 255));
+color: black;
+border-radius:10px</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tune Core&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>270</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>Tune Core</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="tunecore">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>300</y>
+             <width>100</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+           </property>
+           <property name="text">
+            <string>Go to Tune Core</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>330</y>
+             <width>511</width>
+             <height>211</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TuneCore is a music distribution and &lt;/p&gt;&lt;p&gt;publishing administration service &lt;/p&gt;&lt;p&gt;that provides thousands if independent artists with the tools &lt;/p&gt;&lt;p&gt;to increase exposure and get their music heard &lt;/p&gt;&lt;p&gt;by more people around the world, &lt;/p&gt;&lt;p&gt;all while maintaining ownership of their music and &lt;/p&gt;&lt;p&gt;100 percent of revenues &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>530</y>
+             <width>71</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.995074, y2:0, stop:0 rgba(208, 223, 76, 255), stop:1 rgba(242, 242, 242, 255));
+color: Green;
+border-radius:10px</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DistroKid&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>530</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>Distro Kid</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="distrokid">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>560</y>
+             <width>100</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+           </property>
+           <property name="text">
+            <string>Go to DistroKid</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>590</y>
+             <width>511</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Cascadia Code</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+color: black;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DistroKid distributes &lt;/p&gt;&lt;p&gt;your music to all the major streaming services &lt;/p&gt;&lt;p&gt;and digital stores. &lt;/p&gt;&lt;p&gt;DistroKid distributes your music to all of &lt;/p&gt;&lt;p&gt;the major streaming services and digital stores, &lt;/p&gt;&lt;p&gt;including Spotify, Apple Music and iTunes, &lt;/p&gt;&lt;p&gt;TikTok, Instagram, &lt;/p&gt;&lt;p&gt;Facebook, Amazon, and many more. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="goback">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>10</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: black;
+	border: none;
+	border-radius: 10px
+}
+QPushButton:hover{
+	background-color: rgb(41, 41, 41);
+	border: none;
+	border-radius: 10px
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;-- Go Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
